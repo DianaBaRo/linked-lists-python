@@ -30,6 +30,44 @@
         #Deletion: is better use a linked list. Deletion only requires change in the pointer location.
         #Memory managemen: is better an array, because linked lists need extra memory because of the pointers.
 
+#Very nice implementation: https://github.com/kojino/data-structures-algorithms/tree/master/linked_list
+#Node class. Inplement a linked list:
+
+class Node:
+    def __init__(self, val):
+        self.val = val
+        self.next = None #The pointer initially points to nothing
+
+node1 = Node(12)
+node2 = Node(99)
+node3 = Node(37)
+
+node1.next = node2
+node2.next = node3
+
+node1.traverse()
+
+#Traversing values:
+
+class Node:
+    ...
+    def traverse(self):
+        node = self #start from the head node
+        while node != None:
+            print node.val #access the node value
+            node = node.next #move on to the next node
+            
+     node1.traverse()
+            
+#Doubly linked list
+
+class DoublyNode:
+    def __init__(self, val):
+        self.val = data
+        self.next = None
+        self.pre = None
+
+        
 #insert
 
 class Node(object):
